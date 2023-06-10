@@ -5,6 +5,7 @@ import Favorite from './components/Favorite/Favorite.js';
 import Home from './components/Home/Home.js';
 import PageNotFound from './components/PageNotFound/PageNotFound.js';
 import { Routes, Route } from 'react-router-dom';
+import List from './components/List/List.js';
 const App = () => {
   return (
     <main>
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/favorite" element={<Favorite />} />
+          <Route path="/list/:listId" element={<List />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Container>

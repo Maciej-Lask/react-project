@@ -27,11 +27,18 @@
       text-decoration: none;
       color: white;
       &:hover {
-        color :lighten($color-dark, 65%)
+        color :lighten($color-dark, 65%);
       }
     }
   }
+
   li {
     font-size: 16px;
   }
+
+  .linkActive {
+    color: $color-warning;
+    text-decoration: none;
+  }
+
 }
