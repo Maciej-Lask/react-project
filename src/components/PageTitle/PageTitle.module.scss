@@ -4,7 +4,17 @@
   padding: $base-size;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  .FavoriteCardsContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    min-width: 400px;
+    background: $color-light;
+    padding: 20px;
+    border-radius: 5px;
+  }
 }
 
 .PageTitle {
