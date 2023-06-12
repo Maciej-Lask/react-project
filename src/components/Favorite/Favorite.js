@@ -3,7 +3,7 @@ import PageTitle from '../PageTitle/PageTitle';
 import Card from '../Card/Card';
 import clsx from 'clsx';
 import { useSelector } from 'react-redux';
-import { getAllFavoriteCards } from '../../redux/store';
+import { getAllFavoriteCards } from '../../redux/cardsRedux';
 const Favorite = () => {
   const cards = useSelector((state) => getAllFavoriteCards(state));
   return (
